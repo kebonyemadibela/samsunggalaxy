@@ -1,0 +1,408 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 18px; 
+    font-weight: 400;
+    background-color: #f9f9f9;
+    color: #222;
+    line-height: 1.7; 
+  }
+  
+  header {
+    background-color: #1428a0;
+    color: white;
+    padding: 25px;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+  }
+  
+  
+  nav {
+    background-color: #1428a0;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: paleturquoise;
+  }
+  
+  main {
+    padding: 30px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  main h2 {
+    font-size: 2rem;
+    color: black;
+  }
+  
+  main p {
+    font-size: 1.1rem;
+    color: #333;
+  }
+  
+  .product-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: space-between;
+  }
+  
+  .product {
+    width: 30%;
+    min-width: 250px;
+  }
+  
+  .product img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .product h3 {
+    margin: 10px 0 5px;
+    font-size: 1.3rem; 
+    color: black;
+  }
+  
+  .product p {
+    font-size: 1.05rem; 
+    color: #444;
+  }
+  
+  .product .price {
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #000;
+  }
+  
+
+  .sidebar h3 {
+    font-size: 1.3rem;
+    color: black;
+  }
+  
+  .sidebar ul {
+    padding-left: 20px;
+  }
+  
+  .sidebar ul li {
+    margin-bottom: 10px;
+    font-size: 1.05rem;
+  }
+  
+
+  footer {
+    background-color: #1428a0;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    font-size: 25px;
+  }
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.sidebar {
+  flex: 1;
+  min-width: 250px;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+}
+.sidebar-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.about-image {
+  width:100px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.main-content {
+  flex: 2;
+  min-width: 300px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+}
+
+.main-content ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.main-content ul li {
+  padding: 8px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.btn-contact {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #1428a0;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.btn-contact:hover {
+  background-color: #0c1a60;
+}
+.feedback-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #f7f7f7;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button[type="submit"] {
+  background-color: #0077cc;
+  color: white;
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #005fa3;
+}
+.center-text{
+  text-align: Center;
+}
+.table-container {
+  width: 90%;
+  margin: 20px auto;
+  overflow-x: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: auto;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #444;
+  color: white;
+}
+td img {
+  width: 100px;
+  height: auto;
+  border-radius: 5px;
+}
+
+td ul {
+  padding-left: 16px;
+  margin: 0;
+}
+
+td ul li {
+  margin-bottom: 4px; 
+}
+.contact-options {
+  margin-top: 3rem;
+  text-align: center; 
+}
+.contact-box {
+  display: inline-block;
+  margin: 1rem auto;
+  background: #e6e6e6;
+  padding: 1rem;
+  border-radius: 5px;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 500px;
+  margin: auto;
+  background: #f9f9f9;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.contact-form label {
+  text-align: center;
+  margin-top: 1rem;
+  font-weight: bold;
+  width: 100%;
+}
+
+.contact-form input {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  margin-top: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  background-color: #0074e4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.page-intro {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.page-intro h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.page-intro p {
+  font-size: 1rem;
+  color: #555;
+}
+
+@media (max-width: 767px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product {
+    width: 90%;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar,
+  .main-content {
+    width: 100%;
+  }
+
+  .contact-form,
+  .feedback-form,
+  .table-container {
+    width: 95%;
+    padding: 15px;
+  }
+
+  header h1,
+  .page-intro h2 {
+    font-size: 2rem;
+  }
+
+  nav a {
+    font-size: 18px;
+  }
+
+  .btn-contact {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .product {
+    width: 45%;
+  }
+
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .sidebar,
+  .main-content {
+    width: 100%;
+  }
+
+  nav {
+    flex-wrap: wrap;
+  }
+
+  .table-container,
+  .contact-form,
+  .feedback-form {
+    width: 95%;
+  }
+}
+
+

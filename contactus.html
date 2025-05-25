@@ -1,0 +1,96 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us|Samsung Galaxy</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Samsung Galaxy</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="aboutus.html">About Us</a>
+    <a href="products.html">Products</a>
+    <a href="contactus.html">Contact Us</a>
+    <a href="feedback.html">Feedback</a>
+    <a href="services.html">Services</a>
+  </nav>
+  <div class="container">
+    <main class="main-content">
+   <section class="page-intro">
+  <h2>Contact Us</h2>
+  <p>We're here to help! Please fill in your details and we'll get back to you as soon as possible.</p>
+</section>
+      <form class="contact-form" action="aboutus.html" method="post">
+        <label for="first-name">First Name</label>
+        <input type="text" id="first-name" name="FirstName" required pattern="[A-Za-z\s]+" title="Only letters allowed">
+
+        <label for="last-name">Last Name</label>
+        <input type="text" id="last-name" name="LastName" required pattern="[A-Za-z\s]+" title="Only letters allowed">
+
+        <label for="country">Country</label>
+        <input type="text" id="country" name="Country" required pattern="[A-Za-z\s]+" title="Only letters allowed">
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="PhoneNumber" required pattern="[0-9]{0,10}" placeholder="e.g. 1234567890" title="Enter 0 to 10 digits only">
+
+        <button type="submit">Submit</button>
+
+        <div class="contact-options">
+          <h2>Other Ways To Get In Touch</h2>
+          <div class="contact-box">
+            <strong>Email:</strong> support@samsung.com
+          </div>
+          <div class="contact-box">
+            <strong>Phone:</strong> +267 77 468 503
+          </div>
+        </div>
+      </form>
+    </main>
+  </div>
+
+  <footer>
+    &copy; 2025 Samsung Electronics. All rights reserved.
+  </footer>
+
+</body>
+</html>
+<script>
+document.querySelector('.contact-form').addEventListener('submit', function(event) {
+  const firstName = document.getElementById('first-name').value.trim();
+  const lastName = document.getElementById('last-name').value.trim();
+  const country = document.getElementById('country').value.trim();
+  const phone = document.getElementById('phone').value.trim();
+  const phonePattern = /^[0-9]{0,10}$/;
+
+  if (!/^[A-Za-z\s]+$/.test(firstName)) {
+    alert("First name should contain only letters.");
+    event.preventDefault();
+    return;
+  }
+
+  if (!/^[A-Za-z\s]+$/.test(lastName)) {
+    alert("Last name should contain only letters.");
+    event.preventDefault();
+    return;
+  }
+
+  if (!/^[A-Za-z\s]+$/.test(country)) {
+    alert("Country name should contain only letters.");
+    event.preventDefault();
+    return;
+  }
+
+  if (!phonePattern.test(phone)) {
+    alert("Phone number must be 10 to 15 digits.");
+    event.preventDefault();
+    return;
+  }
+
+});
+</script>

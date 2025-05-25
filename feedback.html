@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Feedback - Samsung Galaxy</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  
+    <header>
+      <h1>Samsung Galaxy</h1>
+    </header>
+  
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="aboutus.html">About Us</a>
+      <a href="products.html">Products</a>
+      <a href="contactus.html">Contact Us</a>
+      <a href="feedback.html">Feedback</a>
+      <a href="services.html">Services</a>
+    </nav>
+    <div class="container">
+    <main class="main-content">
+  <h1 class="center-text">We value your feedback</h1>
+
+  <form action="index.html" onsubmit="return validateForm()" method="POST">
+  <div class="basic">
+    <label for="name">Name</label>
+    <input type="text" name="name" id="name" required>
+    <span id="nameError" class="error"></span>
+  </div>
+
+  <div class="basic">
+    <label for="surname">Surname</label>
+    <input type="text" name="surname" id="surname" required>
+    <span id="surnameError" class="error"></span>
+  </div>
+
+  <div class="basic">
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email" required>
+    <span id="emailError" class="error"></span>
+  </div>
+
+  <div class="basic">
+    <label for="message">Message</label>
+    <textarea name="message" id="message" rows="5" required></textarea>
+    <span id="messageError" class="error"></span>
+  </div>
+
+  <div class="basic">
+    <button type="submit">Submit</button>
+  </div>
+
+</form>
+
+    <footer>
+      &copy; 2025 Samsung Electronics. All rights reserved.
+    </footer>
+  
+  <script src="script.js"></script>
